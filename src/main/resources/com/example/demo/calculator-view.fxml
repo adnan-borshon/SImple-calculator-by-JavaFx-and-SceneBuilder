@@ -12,7 +12,7 @@
    <children>
       <StackPane layoutY="7.0" prefHeight="57.0" prefWidth="355.0">
          <children>
-            <Label prefHeight="34.0" prefWidth="342.0" style="-fx-label-padding: 4;" text="label">
+            <Label fx:id="result" prefHeight="34.0" prefWidth="342.0" style="-fx-label-padding: 4;">
                <font>
                   <Font name="Century" size="20.0" />
                </font>
@@ -96,7 +96,12 @@
       </HBox>
       <HBox alignment="CENTER" layoutY="222.0" prefHeight="50.0" prefWidth="355.0" style="-fx-spacing: 15;">
          <children>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefHeight="37.0" prefWidth="134.0" text="0">
+            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="AC">
                <font>
                   <Font size="16.0" />
                </font>
