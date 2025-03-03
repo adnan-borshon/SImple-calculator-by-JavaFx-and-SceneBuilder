@@ -8,114 +8,47 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
+<AnchorPane prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(to bottom, black, gray);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
    <children>
       <StackPane layoutY="7.0" prefHeight="57.0" prefWidth="355.0">
          <children>
-            <Label fx:id="result" prefHeight="34.0" prefWidth="342.0" style="-fx-label-padding: 4;">
+            <Label fx:id="result" prefHeight="34.0" prefWidth="342.0" style="-fx-label-padding: 4; -fx-text-fill: white;">
                <font>
                   <Font name="Century" size="20.0" />
                </font>
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
             </Label>
          </children>
       </StackPane>
-      <HBox alignment="CENTER" layoutY="72.0" prefHeight="50.0" prefWidth="355.0" style="-fx-spacing: 15;">
+      <HBox alignment="CENTER" layoutY="72.0" prefHeight="50.0" prefWidth="355.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="7">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="8">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="9">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="/">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
+            <Button text="7" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="8" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="9" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="/" onAction="#processOperators" styleClass="calculator-button"/>
          </children>
       </HBox>
-      <HBox alignment="CENTER" layoutY="122.0" prefHeight="50.0" prefWidth="355.0" style="-fx-spacing: 15;">
+      <HBox alignment="CENTER" layoutY="122.0" prefHeight="50.0" prefWidth="355.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="4">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="5">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="6">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="*">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
+            <Button text="4" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="5" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="6" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="*" onAction="#processOperators" styleClass="calculator-button"/>
          </children>
       </HBox>
-      <HBox alignment="CENTER" layoutY="172.0" prefHeight="50.0" prefWidth="355.0" style="-fx-spacing: 15;">
+      <HBox alignment="CENTER" layoutY="172.0" prefHeight="50.0" prefWidth="355.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="1">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="2">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="3">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="-">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
+            <Button text="1" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="2" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="3" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="-" onAction="#processOperators" styleClass="calculator-button"/>
          </children>
       </HBox>
-      <HBox alignment="CENTER" layoutY="222.0" prefHeight="50.0" prefWidth="355.0" style="-fx-spacing: 15;">
+      <HBox alignment="CENTER" layoutY="222.0" prefHeight="50.0" prefWidth="355.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#processNumbers" prefWidth="60.0" text="0">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="AC">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="=">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" onAction="#processOperators" prefWidth="60.0" text="+">
-               <font>
-                  <Font size="16.0" />
-               </font>
-            </Button>
+            <Button text="0" onAction="#processNumbers" styleClass="calculator-button"/>
+            <Button text="AC" onAction="#processOperators" styleClass="calculator-button"/>
+            <Button text="=" onAction="#processOperators" styleClass="calculator-button"/>
+            <Button text="+" onAction="#processOperators" styleClass="calculator-button"/>
          </children>
       </HBox>
    </children>

@@ -14,6 +14,7 @@ public class Main extends Application {
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("calculator-view.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 350  , 300);
+            scene.getStylesheets().add(Main.class.getResource("/style.css").toExternalForm());
 
             primaryStage.setTitle("Calculator Application");
             primaryStage.setScene(scene);
